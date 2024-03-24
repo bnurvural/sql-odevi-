@@ -1,0 +1,39 @@
+  1/ CREATE TABLE filmler (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(100),
+    yönetmen VARCHAR(100),
+    yayın_tarihi DATE,
+    süre INT,
+    dil VARCHAR(50),
+    puan DECIMAL(3, 1)
+);
+2/ CREATE TABLE adres (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sokak VARCHAR(100),
+    şehir VARCHAR(100),
+    ülke VARCHAR(100),
+    posta_kodu VARCHAR(20)
+);
+3/ CREATE TABLE odul_alan_filmler (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    film_adı VARCHAR(100),
+    yönetmen VARCHAR(100),
+    ödül VARCHAR(100),
+    ödül_yılı INT
+);
+4/ CREATE TABLE en_cok_oynanan_oyunlar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    oyun_adı VARCHAR(100),
+    yayıncı VARCHAR(100),
+    oyuncu_sayısı INT,
+    platform VARCHAR(50)
+);
+5/ CREATE TABLE calisanlar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(100),
+    soyad VARCHAR(100),
+    departman VARCHAR(100),
+    pozisyon VARCHAR(100),
+    maas DECIMAL(10, 2),
+    giris_tarihi DATE
+);
